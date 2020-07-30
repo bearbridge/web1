@@ -3,15 +3,66 @@
   <head>
     <title>치매에 관하여...</title>
     <meta charset="utf-8">
+    <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    h2{
+      margin-left: 15px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+   #grid{
+     display: grid;
+     grid-template-columns: 150px 1fr;
+   }
+   #grid ol{
+     padding-left:29px;
+   }
+   #grid #article{
+     padding-left:25px;
+   }
+   @media(max-width:500px){
+     #grid{
+       display: block;
+     }
+     ol{
+        border-right:none;
+     }
+     h1{
+       border-bottom:none;
+     }
+   }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">치매(Alzheimer's_disease)</a></h1>
+    <div id ="grid">
     <ol>
       <li><a href="1.html">해석</a></li>
       <li><a href="2.html">분석</a></li>
-      <li><a href="3.html">도표</a></li>
+      <li><a href="3.html"style="color:red;text-decoration:underline">도표</a></li>
+      <li><a href="4.html">대처</a></li>
     </ol>
+    <div>
     <h2>도표</h2>
     <img <source src="a_range.png" width="100%">
   </body>
+</div>
+</div>
 </html>
